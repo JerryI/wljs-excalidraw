@@ -1,7 +1,7 @@
 {
     "name": "wljs-excalidraw",
     "version": "0.0.4",
-    "description": "Integration of Excalidraw",
+    "description": "A shared library of Excalidraw & React",
     "scripts": {
         "build": "node --max-old-space-size=8192 ./node_modules/.bin/rollup --config rollup.config.mjs",
         "restore": "mkdir _temp && cd _temp && git clone https://github.com/JerryI/wljs-excalidraw && mv wljs-excalidraw/.git ../.git && cd .. && rm -rf _temp"
@@ -9,11 +9,8 @@
     "defaultPackage": true,
     "wljs-meta": {
         "priority": 800,
-        "category": "Cell types",
-        "js": "dist/kernel.js",
-        "minjs": "dist/kernel.js",
-        "frontend" : "src/Frontend.wl",
-        "styles": "src/styles.css"
+        "category": "Shared libraries",
+        "js": "dist/kernel.js"
     },
     "repository": {
         "type": "git",
