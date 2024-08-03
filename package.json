@@ -8,7 +8,7 @@
     },
     "defaultPackage": true,
     "wljs-meta": {
-        "priority": 800,
+        "priority": 990,
         "category": "Shared libraries",
         "js": "dist/kernel.js"
     },
