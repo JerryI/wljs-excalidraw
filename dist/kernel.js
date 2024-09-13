@@ -258,11 +258,8 @@ class ExcalidrawWidget extends codemirror.WidgetType {
 
 var generateSVG = async (data) => {
   if (!ExcalidrawLib) {
-    if (!window.interpretate.shared.ExcalidrawLib) {
-      return `<span style="color:red">No sharedlib Excalidraw found!</span>`;
-    }
     await window.interpretate.shared.Excalidraw.load();
-    ExcalidrawLib = window.interpretate.shared.Excalidraw.Excalidraw.default;
+    ExcalidrawLib = window.interpretate.shared.Excalidraw.Excalidraw.default;  
     //ExcalidrawLib = (await import('@excalidraw/excalidraw')).default;
   }
 
