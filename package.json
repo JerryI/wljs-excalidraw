@@ -1,6 +1,6 @@
 {
     "name": "wljs-excalidraw",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "A shared library of Excalidraw & React",
     "scripts": {
         "build": "node --max-old-space-size=8192 ./node_modules/.bin/rollup --config rollup.config.mjs",
