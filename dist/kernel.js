@@ -286,7 +286,7 @@ var generateSVG = async (data) => {
   return stringed;
 };
 
-core['Internal`EXJSEvaluator'] = async (args, env) => {
+core['Internal`Kernel`EXJSEvaluator'] = async (args, env) => {
   let data = await interpretate(args[0], env);
 
   if (!Array.isArray(data)) {
